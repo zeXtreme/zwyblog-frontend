@@ -8,10 +8,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
     /* 不使用bootstrap的默认链接样式 */
-    #logo{color: black;}
-    #logo:hover{color: black;text-decoration: none;}
+    h1,h2,h3,h4,h5,h6,h2 > a,#logo{color: gray;}
+    h2 > a:hover,#logo:hover,.currpage:hover{color: black;text-decoration: none;}
     .currpage{color: black;}
-    .currpage:hover{color: black;text-decoration: none;}
     </style>
   </head>
   <body>
@@ -28,7 +27,7 @@
       <div class="row" id="main">
         <div class="col-md-6 col-md-offset-2" id="content">
           <div>
-            <h2><a href="#">Hello World!</a></h2>
+            <h2><a href="#" onclick="loadMain('content.html')">Hello World!</a></h2>
             <p>文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容</p>
             <a href="#">继续阅读……</a>
             <hr>
@@ -156,5 +155,10 @@
     <script src="js/jquery-1.11.2.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function loadMain(url){
+      $("#content").load(url);
+    }
+    </script>
   </body>
 </html>
