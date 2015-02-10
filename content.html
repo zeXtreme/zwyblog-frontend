@@ -1,48 +1,190 @@
-<div class="row">
-  <div class="col-md-12">
-    <h2>Hello World!</h2>
-    <hr>
-    <p>
-      文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容。
-    </p>
-    <hr>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    <h3>评论</h3>
-    <ul class="list-unstyled">
-      <li>
-        <div class="row">
-          <div class="col-md-12">
-            <img src="img/avatar.png" alt="avatar" class="img-responsive img-thumbnail">
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zwy.ME</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2" id="nav">
+          <h1><a href="index.html" id="logo">Zwy.ME</a></h1>
+            <ul class="nav nav-pills">
+              <li role="presentation" class="active"><a href="#">主页</a></li>
+              <li role="presentation"><a href="#">关于</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="row" id="main">
+        <div class="col-md-6 col-md-offset-2" id="content">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Hello World!</h2>
+              <hr>
+              <br>
+              <p id="content-info">Created by zwy,2015-1-2</p>
+              <br>
+              <p>
+                文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容。
+              </p>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>评论</h3>
+              <br>
+              <ul class="list-unstyled">
+                <li>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div>
+                        <img src="img/avatar.png" alt="avatar" class="img-responsive img-thumbnail" id="avatar">
+                        <label for="avatar"><div>name says:</div><div style="font-size: 12px">2015/1/2</div></label>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <br>
+                            <p>评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</p>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div>
+                        <img src="img/avatar.png" alt="avatar" class="img-responsive img-thumbnail" id="avatar">
+                        <label for="avatar"><div>name says:</div><div style="font-size: 12px">2015/1/2</div></label>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <br>
+                            <p>评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容</p>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>评论文章</h3>
+              <form role="form">
+                <div class="input-group">
+                  <label class="sr-only" for="name">name</label>
+                  <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+                  <input input="text" class="form-control" id="name" placeholder="输入姓名">
+                </div>
+                <div class="input-group">
+                  <label class="sr-only" for="email">email</label>
+                  <div class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+                  <input type="email" class="form-control" id="email" placeholder="输入邮箱地址">
+                </div>
+                <div class="input-group">
+                  <label class="sr-only" for="comment">comment</label>
+                  <div class="input-group-addon"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></div>
+                  <textarea class="form-control" rows="3" id="comment" placeholder="输入评论"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">提交</button>
+              </form>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-2" id="sidebar">
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label for="serchtext" class="sr-only">Search</label>
+              <input input="text" placeholder="搜索" class="form-control" id="serchtext">
+            </div>
+          </form>
+          <hr>
+          <div>
+            <h2>最热文章</h2>
+            <ul class="list-unstyled">
+              <h5><a href="#"><li>Hello World!</li></a></h5>
+              <h5><a href="#"><li>Hello World!</li></a></h5>
+              <h5><a href="#"><li>Hello World!</li></a></h5>
+              <h5><a href="#"><li>Hello World!</li></a></h5>
+              <h5><a href="#"><li>Hello World!</li></a></h5>
+            </ul>
+            <hr>
+          </div>
+          <div>
+            <h2>最新评论</h2>
+            <ul class="list-unstyled">
+              <h5><a href="#"><li>You:&nbsp;Hello World!</li></a></h5>
+              <h5><a href="#"><li>You:&nbsp;Hello World!</li></a></h5>
+              <h5><a href="#"><li>You:&nbsp;Hello World!</li></a></h5>
+              <h5><a href="#"><li>You:&nbsp;Hello World!</li></a></h5>
+              <h5><a href="#"><li>You:&nbsp;Hello World!</li></a></h5>
+            </ul>
+            <hr>
+          </div>
+          <div>
+            <h2>友情链接</h2>
+            <ul class="list-unstyled">
+              <h5><a href="#"><li>Google</li></a></h5>
+              <h5><a href="#"><li>Baidu</li></a></h5>
+              <h5><a href="#"><li>Yahoo</li></a></h5>
+              <h5><a href="#"><li>Netease</li></a></h5>
+              <h5><a href="#"><li>Sohu</li></a></h5>
+            </ul>
+            <hr>
           </div>
         </div>
-      </li>
-    </ul>
-    <hr>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    <h3>评论文章</h3>
-    <form role="form">
-      <div class="input-group">
-        <label class="sr-only" for="name">name</label>
-        <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
-        <input input="text" class="form-control" id="name" placeholder="输入姓名">
       </div>
-      <div class="input-group">
-        <label class="sr-only" for="email">email</label>
-        <div class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
-        <input type="email" class="form-control" id="email" placeholder="输入邮箱地址">
+      <div id="footer" class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <hr>
+          <div class="col-md-6">
+            <p>CopyRight&nbsp;&copy;&nbsp;Zwy.ME</p>
+          </div>
+          <div class="col-md-6 text-right">
+            <p>Design by <a href="http://zwy.me/">Zwy</a></p>
+            <p>Thanks for <a href="http://getbootstrap.com/">Bootstrap</a></p>
+          </div>
+        </div>
       </div>
-      <div class="input-group">
-        <label class="sr-only" for="comment">comment</label>
-        <div class="input-group-addon"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></div>
-        <textarea class="form-control" rows="3" id="comment" placeholder="输入评论"></textarea>
-      </div>
-    </form>
-    <hr>
-  </div>
-</div>
+    </div>
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">跳转页面</h4>
+          </div>
+          <div class="modal-body">
+            <form id="gopage" role="form" class="form-horizontal">
+              <div class="form-group">
+                <label for="inputPageNum" class="col-sm-4 control-label">跳转到</label>
+                <div class="col-sm-4">
+                  <input type="number" class="form-control" id="inputPageNum" placeholder="页码">
+                </div>
+                <label for="inputPageNum" class="col-sm-4 control-label">页</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">确定</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.2.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+    

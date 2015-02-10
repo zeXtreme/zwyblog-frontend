@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zwy.ME</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-    /* 不使用bootstrap的默认链接样式 */
-    h1,h2,h3,h4,h5,h6,h2 > a,#logo{color: gray;}
-    h2 > a:hover,#logo:hover,.currpage:hover{color: black;text-decoration: none;}
-    .currpage{color: black;}
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
   </head>
   <body>
     <div class="container">
@@ -27,9 +22,9 @@
       <div class="row" id="main">
         <div class="col-md-6 col-md-offset-2" id="content">
           <div>
-            <h2><a href="#" onclick="loadMain('content.html')">Hello World!</a></h2>
+            <h2><a href="content.html">Hello World!</a></h2>
             <p>文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容</p>
-            <a href="#">继续阅读……</a>
+            <a href="content.html">继续阅读……</a>
             <hr>
           </div>
           <div>
@@ -70,16 +65,6 @@
               <a href="#">10</a>
             </div>
             <div class="col-md-3 text-right"><a href="#">下一页</a></div>
-          </div>
-          <div id="footer" class="row">
-            <hr>
-            <div class="col-md-6">
-              <p>CopyRight&nbsp;&copy;&nbsp;Zwy.ME</p>
-            </div>
-            <div class="col-md-6 text-right">
-              <p>Design by <a href="http://zwy.me/">Zwy</a></p>
-              <p>Thanks for <a href="http://getbootstrap.com/">Bootstrap</a></p>
-            </div>
           </div>
         </div>
         <div class="col-md-2" id="sidebar">
@@ -125,6 +110,18 @@
           </div>
         </div>
       </div>
+      <div id="footer" class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <hr>
+          <div class="col-md-6">
+            <p>CopyRight&nbsp;&copy;&nbsp;Zwy.ME</p>
+          </div>
+          <div class="col-md-6 text-right">
+            <p>Design by <a href="http://zwy.me/">Zwy</a></p>
+            <p>Thanks for <a href="http://getbootstrap.com/">Bootstrap</a></p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="modal fade" id="myModal">
       <div class="modal-dialog modal-sm">
@@ -155,10 +152,5 @@
     <script src="js/jquery-1.11.2.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    function loadMain(url){
-      $("#content").load(url);
-    }
-    </script>
   </body>
 </html>
